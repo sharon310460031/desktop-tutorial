@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <title>建功高中_資訊社社團課程</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <!--內容完成-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">Unity教學網站</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item  dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">前置作業</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="IFAIE.html">安裝檔案及整合環境</a></li>
+                    <li><a class="dropdown-item" href="MP.html">找尋素材、製作素材</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="2DI.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">2D橫向卷軸遊戲</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="2DI.html">主角設定</a></li>
+                    <li><a class="dropdown-item" href="#">背景設定</a></li>
+                    <li><a class="dropdown-item" href="#">物體碰撞</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">敵人設定</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <a href="login.html" class="link-dark text-decoration-none d-flex align-items-center px-2" title="會員登入">
+                <i class="bi bi-person-circle fs-3"></i>
+            </a>
+        </form>
+        </div>
+        </div>
+        </nav>
+        <!-- 內文 -->
+        <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h1 class="mb-4 fw-bold text-primary">安裝檔案及整合環境</h1>
+                <p class="lead text-muted">在本節中，我們將完成開發 Unity 遊戲所需的工具配置。</p>
+                <!--STEP1 安裝UNITY-->
+                <hr class="my-5">
+                <section class="mb-5">
+                    <h3 class="mb-1"><span class="badge bg-primary me-2">Step 1</span>安裝 Unity Hub</h3>
+                    <div class="card shadow-sm border-0 bg-light p-1">
+                        <ol>
+                            <li class="mb-2">前往 <a href="https://unity.com/download" target="_blank">Unity 官網</a> 下載並安裝 <strong>Unity Hub</strong>。</li>
+                            <div class="text-center my-2">
+                                <img src="Images/UNITY01.png" class="img-fluid rounded shadow-sm" alt="Unity 安裝圖" style="max-height: 150px;">
+                                <p class="text-muted mt-2 small">▲ 按下藍色按鈕下載安裝包</p>
+                            </div>
+                            <li class="mb-2">安裝下載包。</li>
+                            <div class="row g-3 justify-content-center my-3">
+                                <div class="col-6 col-md-4">
+                                    <div class="text-center">
+                                        <img src="Images/UNITY02.png" class="img-fluid rounded shadow-sm" alt="Unity 安裝1" style="max-height: 200px;">
+                                        <p class="text-muted mt-2 small">▲ 按下我同意</p>
+                                    </div>
+                                </div>
+                            <div class="col-6 col-md-4">
+                                <div class="text-center">   
+                                    <img src="Images/UNITY03.png" class="img-fluid rounded shadow-sm" alt="Unity 安裝2" style="max-height: 200px;">
+                                    <p class="text-muted mt-2 small">▲ 確認安裝位置，並按下安裝</p>
+                                </div>
+                            </div>
+                            <li class="mb-2">開啟程式，並且註冊/登入帳號 取得 <strong>Personal License</strong>（個人免費授權）。</li>
+                            <li class="mb-2">在 Hub 的 「Installs/安裝」分頁點擊 <strong>Install Editor</strong>，建議選擇標註有 <b>LTS</b> (長期支援) 的版本。</li>
+                            <div class="text-center my-2">
+                                <img src="Images/unity04.png" class="img-fluid rounded shadow-sm" alt="Unity 安裝3" style="max-height: 150px;">
+                                <p class="text-muted mt-2 small">▲ 安裝最新版本</p>
+                            </div>
+                        </ol>
+                    </div>
+                </section>
+                <!--STEP2 安裝Visual Studio-->
+                <hr class="my-5">
+                <section class="mb-5">
+                    <h3 class="mb-3"><span class="badge bg-primary me-2">Step 2</span>安裝 Visual Studio Code</h3>
+                    <div class="card shadow-sm border-0 bg-light p-1">
+                        <ol>
+                            <li class="mb-2">前往 <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code 官網</a> 下載並安裝 <strong>Visual Studio Code</strong>。</li>
+                            <div class="text-center my-2">
+                                <img src="Images/VS01.png" class="img-fluid rounded shadow-sm" alt="VS 安裝圖" style="max-height: 200px;">
+                                <p class="text-muted mt-2 small">▲ 按照電腦系統選擇下載安裝包</p>
+                            </div>
+                            <li class="mb-2">安裝下載包。</li>
+                            <li class="mb-2">(若需要中文版本)開啟程式，並且更改程式語言為繁體中文。</li>
+                            <div class="text-center my-2">
+                                <img src="Images/VS02.png" class="img-fluid rounded shadow-sm" alt="VS 中文" style="max-height: 350px;">
+                                <p class="text-muted mt-2 small">▲ 安裝中文語言</p>
+                            </div>
+                            <li class="mb-2">安裝延伸模組：Unity。</li>
+                            <div class="text-center my-2">
+                                <img src="Images/VS04.png" class="img-fluid rounded shadow-sm" alt="VS unity" style="max-height: 200px;">
+                                <p class="text-muted mt-2 small">▲ 安裝Unity模組</p>
+                            </div>
+                        </ol>
+                    </div>
+                </section>
+                <!--STEP3 整合-->
+            <section class="mb-4">
+                <h3 class="mb-3"><span class="badge bg-warning text-dark me-2">Step 3</span>整合 Visual Studio (腳本編輯)</h3>
+                <p>若沒有正確連結，寫程式時將不會出現自動補全功能。</p>
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-action">
+                        <h6 class="mb-1 fw-bold">1. 開啟偏好設定</h6>
+                        <p class="mb-1 text-secondary">在 Unity 頂部選單選擇 <code>Edit</code> > <code>Preferences</code> (Mac 為 Unity > Settings)。</p>
+                    </div>
+                    <div class="list-group-item list-group-item-action">
+                        <h6 class="mb-1 fw-bold">2. 指定外部工具</h6>
+                        <p class="mb-1 text-secondary">左側選擇 <code>External Tools</code>，在 <code>External Script Editor</code> 下拉選單中選擇 <code>Visual Studio Code</code>。</p>
+                        <div class="text-center my-2">
+                                <img src="Images/VS03.png" class="img-fluid rounded shadow-sm" alt="VS 整合" style="max-height: 350px;">
+                                <p class="text-muted mt-2 small">▲ Unity 與 VS Code 整合</p>
+                            </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action">
+                        <h6 class="mb-1 fw-bold">3. 點擊保存</h6>
+                        <p class="mb-1 text-secondary">點擊 <code>Regenerate project files</code> 確保 Unity 與 VS 同步。</p>
+                    </div>
+                </div>
+            </section>
+                <!--STEP4 測驗腳本-->
+            <section class="mb-4">
+                <h3 class="mb-3"><span class="badge bg-success me-2">Step 4</span>測試你的第一個腳本</h3>
+                <div class="card shadow-sm border-0 bg-light p-1">
+                        <ol>
+                            <li class="mb-2">進入Unity專案</li>
+                            <div class="text-center my-2">
+                                <img src="Images/unity05.png" class="img-fluid rounded shadow-sm" alt="UNITY 介面" style="max-height: 200px;">
+                                <p class="text-muted mt-2 small">▲ Unity左下方介面</p>
+                            </div>
+                            <li class="mb-2">在<strong>Project中的Assets</strong>的畫面中按右鍵，選單選擇<code>Create</code> > <code>Scripting</code> > <code>Empty C# Script</code></li>
+                            <div class="text-center my-2">
+                                <img src="Images/unity06.png" class="img-fluid rounded shadow-sm" alt="unity新增" style="max-height: 350px;">
+                                <p class="text-muted mt-2 small">▲ 新增一個腳本</p>
+                            </div>
+                            <li class="mb-2">重新命名為Test，並且點擊檔案開啟。</li>
+                            <li class="mb-2">在<code>Test.cs</code>中將以下程式碼複製貼上，即可儲存並關閉檔案。(注意類別名稱必須也是 Test)：</li>
+                            <!--程式碼-->    
+                            <div class="bg-dark text-white p-3 rounded shadow-lg">
+                                <pre class="mb-0"><code>using UnityEngine;
+
+public class Test : MonoBehaviour
+{
+    // Start 是遊戲開始後會執行的第一個地方
+    void Start()
+    {
+        // 這行程式碼會在 Unity 的 Console 視窗印出訊息
+        Debug.Log("Unity 環境配置成功！");
+    }
+}</code></pre>
+                            </div>
+                            <li class="mb-2">回到Unity介面中，找到<code>Main Camera</code>，並用滑鼠拖曳<code>Test</code>檔案拉到右側的 Inspector 面板（屬性視窗）裡放掉。</li>
+                            <div class="text-center my-2">
+                                <img src="Images/unity07.png" class="img-fluid rounded shadow-sm" alt="執行test檔案" style="max-height: 350px;">
+                                <p class="text-muted mt-2 small">▲ 將腳本掛載至攝影機</p>
+                            </div>
+                            <li class="mb-2">點擊 Unity 視窗正上方中間的 Play (▶) 按鈕。</li>
+                            <li class="mb-2">查看 Unity 最下方的 Console 視窗，如果看到一行字寫著 「Unity 環境配置成功！」，就代表你成功串連了！</li>
+                            <div class="text-center my-2">
+                                <img src="Images/unity08.png" class="img-fluid rounded shadow-sm" alt="執行test檔案" style="max-height: 350px;">
+                                <p class="text-muted mt-2 small">▲ 成功看到 Log 訊息</p>
+                            </div>
+                            </ol>
+                        </div>
+            </section>
+            <!--換頁-->
+            <div class="d-flex justify-content-between mt-5">
+                <a href="Index.html" class="btn btn-outline-secondary">← 回首頁</a>
+                <a href="MP.html" class="btn btn-primary">素材製作 →</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
