@@ -1,55 +1,206 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <title>建功高中_資訊社社團課程</title>
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        
+        <title>找尋素材 - Unity教學網站</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .resource-card:hover {
+                transform: translateY(-5px);
+                transition: 0.3s;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+        </style>
     </head>
     <body>
-        <!--內容完成-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Unity教學網站</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            </li>
-            <li class="nav-item  dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">前置作業</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="IFAIE.html">安裝檔案及整合環境</a></li>
-                    <li><a class="dropdown-item" href="MP.html">找尋素材、製作素材</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="2DI.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">2D橫向卷軸遊戲</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="2DI.html">主角設定</a></li>
-                    <li><a class="dropdown-item" href="#">背景設定</a></li>
-                    <li><a class="dropdown-item" href="#">物體碰撞</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">敵人設定</a></li>
-                </ul>
-            </li>
-        </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-            <a href="login.html" class="link-dark text-decoration-none d-flex align-items-center px-2" title="會員登入">
-                <i class="bi bi-person-circle fs-3"></i>
-            </a>
-        </form>
-        </div>
-        </div>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Index.html">Unity教學網站</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">前置作業</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="IFAIE.html">安裝檔案及整合環境</a></li>
+                                <li><a class="dropdown-item active" href="MP.html">找尋素材、製作素材</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="2DI.html" role="button" data-bs-toggle="dropdown">2D橫向卷軸遊戲</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="2DI.html">主角設定</a></li>
+                                <li><a class="dropdown-item" href="#">背景設定</a></li>
+                                <li><a class="dropdown-item" href="#">物體碰撞</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">敵人設定</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <a href="login.html" class="link-dark text-decoration-none d-flex align-items-center px-2">
+                            <i class="bi bi-person-circle fs-3"></i>
+                        </a>
+                    </form>
+                </div>
+            </div>
         </nav>
-        <!-- 內文 -->
 
-        </body>
+        <div class="container mt-5">
+            <div class="row mb-1">
+                <div class="col">
+                    <h2 class="fw-bold"><i class="bi bi-palette2 me-2 text-primary"></i>找尋與製作遊戲素材</h2>
+                    <p class="text-muted">遊戲的靈魂在於視覺與聽覺，推薦的免費資源庫。</p>
+                </div>
+            </div>
+            <hr>
+            <!--免費制式資源-->
+            <div class="row g-4 justify-content-center">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Unity Asset Store</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">官方資源商店</h6>
+                            <p class="card-text">最直接的管道，許多免費的高品質 2D 角色與環境包可以直接匯入 Unity。</p>
+                            <a href="https://assetstore.unity.com/" target="_blank" class="btn btn-sm btn-primary">前往網站</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Itch.io (Free Assets)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">獨立遊戲天堂</h6>
+                            <p class="card-text">擁有大量像素風格（Pixel Art）的免費素材，非常適合做 2D 橫向卷軸遊戲。</p>
+                            <a href="https://itch.io/game-assets/free" target="_blank" class="btn btn-sm btn-primary">前往網站</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kenney Assets</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">極簡與高品質</h6>
+                            <p class="card-text">完全免費且無版權問題，素材風格統一，非常適合新手練習使用。</p>
+                            <a href="https://kenney.nl/assets" target="_blank" class="btn btn-sm btn-primary">前往網站</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 resource-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">GameArt2D</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">精緻 2D 角色</h6>
+                        <p class="card-text">提供許多「Freebies」系列，包含已切好的角色動畫與地圖貼圖塊。</p>
+                        <a href="https://www.gameart2d.com/freebies.html" target="_blank" class="btn btn-sm btn-primary">前往網站</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--採用AI製作資源-->
+                <div class="row mt-5 mb-4">
+                    <div class="col">
+                        <h2 class="fw-bold"><i class="bi bi-robot me-2 text-danger"></i>使用 AI 快速製作遊戲素材</h2>
+                        <p class="text-muted">利用即時生成技術，將靈感轉化為高品質的遊戲資產。</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card border-danger shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Ideogram</h5>
+                                <h6 class="card-subtitle mb-2 text-danger">精準文字與背景設計</h6>
+                                <p class="card-text">目前最強大的文字生成 AI。非常適合製作遊戲的標題頁、帶有文字的遊戲物件或宣傳海報。</p>
+                                <a href="https://ideogram.ai/" target="_blank" class="btn btn-sm btn-danger">前往網站</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card border-danger shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Freepik AI (Pikaso)</h5>
+                                <h6 class="card-subtitle mb-2 text-danger">即時靈感轉化工具</h6>
+                                <p class="card-text">支援「邊畫邊生成」，能快速將簡單的草圖轉變為高品質的遊戲貼圖或 UI 圖示。</p>
+                                <a href="https://www.freepik.com/pikaso/ai-image-generator/" target="_blank" class="btn btn-sm btn-danger">前往網站</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card border-danger shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Photopea</h5>
+                                <h6 class="card-subtitle mb-2 text-danger">網頁版 Photoshop</h6>
+                                <p class="card-text">最強線上修圖軟體，支援 PSD 檔與高級圖層編輯，是最後精修素材的終點站。</p>
+                                <a href="https://www.photopea.com/" target="_blank" class="btn btn-sm btn-danger">前往網站</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--給予提示-->
+            <div class="alert alert-warning mt-4" role="alert">
+                <h5 class="alert-heading fw-bold"><i class="bi bi-lightbulb"></i> AI 製作小技巧：</h5>
+                <p>生成素材時，建議在關鍵字加上 <b>"2D game asset, side scrolling, white background, sprite sheet"</b>，這樣 AI 生成的圖會更容易去背並直接在 Unity 中使用喔！</p>
+            </div>
+            <!--修剪背景-->
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 resource-card border-danger shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">AI Ease</h5>
+                            <h6 class="card-subtitle mb-2 text-danger">一鍵去背與畫質增強</h6>
+                            <p class="card-text">專門處理素材去背。將 AI 產出的圖片轉為透明背景 PNG，直接匯入 Unity 使用。</p>
+                            <a href="https://www.aiease.ai/remove-object-from-photo/" target="_blank" class="btn btn-sm btn-danger">前往網站</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 resource-card border-danger shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Fotor</h5>
+                            <h6 class="card-subtitle mb-2 text-danger">全能 AI 影像編輯器</h6>
+                            <p class="card-text">支援擴圖、物件移除與 UI 設計。素材生成後進行微調的最佳工具。</p>
+                            <a href="https://www.fotor.com/tw/" target="_blank" class="btn btn-sm btn-danger">前往網站</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 resource-card border-danger shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Hailuo AI (海螺)</h5>
+                            <h6 class="card-subtitle mb-2 text-danger">頂尖 AI 影片生成器</h6>
+                            <p class="card-text">只需文字或圖片，即可生成高畫質、動作流暢的影片。最適合製作遊戲過場動畫、動態標題背景與特效參考。</p>
+                            <a href="https://hailuoai.video/" target="_blank" class="btn btn-sm btn-danger">前往網站</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--換頁-->
+            <div class="d-flex justify-content-between mt-5">
+                <a href="index.html" class="btn btn-outline-secondary">← 回首頁</a>
+            </div>
+
+        </div>
+    </body>
 </html>
